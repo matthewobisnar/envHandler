@@ -3,5 +3,6 @@
 
   (new \EnvHander\Environment\Environment(__DIR__))->load();
 
-  var_dump(getenv('APP_NAME'));
+  (new \EnvHander\Test\TestClass());
+
 ?>

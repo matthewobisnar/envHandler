@@ -20,7 +20,7 @@ class Environment
             return true;
         }
 
-        if (is_null($throw) && $throw == true) {
+        if (is_null($throw) || $throw == true) {
             return false;   
         }
 
@@ -82,14 +82,21 @@ class Environment
      * load Env content and store to putenv if exists.
      * throw RuntimeException if file does not exists.
      * 
-     * @param void
+     * @param boolean
      * @return array
      * @throw RuntimeException;
      */
-
-    public function load()
+    public function load($autoGenerate = null)
     {
-        if ($this->hasEnv(true)) {
+        if (!$this->hasEnv()) {
+            if (!is_null($autoGenerate) && $autoGenerate == true) {
+                $this->generateSampleFormat("");
+            } else {
+                throw new \RuntimeException(sprintf("%s file does not exists", $this->filename));
+            }
+        }
+
+        if ($this->hasEnv()) {
 
             foreach ($this->getEnvFileContent() as $key => $content) {
                 putenv(sprintf("%s=%s", $key, $content));

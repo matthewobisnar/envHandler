@@ -47,21 +47,21 @@ trait EnvironmentCollectionTrait
     public function sampleFormat()
     {
         return [
-            "APP_NAME" => "Bisnar",
-            "APP_URL" => "http",
-            "APP_ENV" => "production",
+            "APP_NAME" => "null",
+            "APP_URL" => "http://localhost",
+            "APP_ENV" => "development",
             "separator",
             "DB_CONNECTIONS" => "pdo",
-            "DB_USERNAME" => "matthew",
-            "DB_PASSWORD" => "root",
-            "DB_NAME" => "mysql",
+            "DB_USERNAME" => "dumpy_username",
+            "DB_PASSWORD" => "dumpy_password",
+            "DB_NAME" => "dump_dbname",
             "DB_HOST" => "localhost",
             "DB_PORT" => "8080",
             "separator",
             "MAILER" => "PHPMailer",
-            "MAIL_MAILER" => "smtp",
-            "MAIL_HOST" => "smtp.mailtrap.io",
-            "MAIL_PORT" => 2525,
+            "MAIL_MAILER" => "null",
+            "MAIL_HOST" => "null",
+            "MAIL_PORT" => "null",
             "MAIL_USERNAME" => "null",
             "MAIL_PASSWORD" => "null",
             "MAIL_ENCRYPTION" => "null",
@@ -87,11 +87,11 @@ trait EnvironmentCollectionTrait
      * @param void
      * @return void
      */
-    public function generateSampleFormat()
+    public function generateSampleFormat($fileNameExtension = ".example")
     {
-        if (!file_exists($this->filePath(".example"))) {
+        $content = "";
 
-            $content = "";
+        if (!file_exists($this->filePath($fileNameExtension))) {
 
             foreach ($this->sampleFormat() as $key => $file) {
 
@@ -104,7 +104,7 @@ trait EnvironmentCollectionTrait
                 }
             }
 
-            $this->generateText ($content);
+            $this->generateText ($content, $fileNameExtension);
         }
     }
 
@@ -114,11 +114,11 @@ trait EnvironmentCollectionTrait
      * @param string
      * @return boolean
      */
-    public function generateText ($content) {
+    public function generateText ($content, $fileNameExtension) {
 
         try {
 
-            $writeContent = fopen($this->filePath(".example"), "w");
+            $writeContent = fopen($this->filePath($fileNameExtension), "w");
             fwrite($writeContent, $content);
             fclose($writeContent);
 

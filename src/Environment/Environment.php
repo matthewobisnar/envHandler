@@ -1,8 +1,8 @@
 <?php
 
-namespace EnvHander\Environment;
+namespace EnvHandler\Environment;
 
-use EnvHander\Environment\EnvironmentColllectionInterface;
+use EnvHandler\Environment\EnvironmentColllectionInterface;
 
 class Environment 
 {
@@ -97,7 +97,6 @@ class Environment
         }
 
         if ($this->hasEnv()) {
-
             foreach ($this->getEnvFileContent() as $key => $content) {
                 putenv(sprintf("%s=%s", $key, $content));
             }

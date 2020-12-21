@@ -1,9 +1,9 @@
 {
-    "name":"envhander/envhander",
+    "name":"envhandler/envhandler",
     "description": "Simple and minimal yet powerful env handler",
     "autoload": {
         "psr-4": {
-            "EnvHander\\": "src/"
+            "EnvHandler\\": "src/"
         }
     },
     "require-dev": {

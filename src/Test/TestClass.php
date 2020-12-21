@@ -1,5 +1,5 @@
 <?php
-namespace EnvHander\Test;
+namespace EnvHandler\Test;
 
 class TestClass
 {

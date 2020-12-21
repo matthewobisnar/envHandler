@@ -11,6 +11,6 @@ return array(
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'Prophecy\\' => array($vendorDir . '/phpspec/prophecy/src/Prophecy'),
-    'EnvHander\\' => array($baseDir . '/src'),
+    'EnvHandler\\' => array($baseDir . '/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
 );

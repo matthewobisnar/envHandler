@@ -1,8 +1,8 @@
 <?php
    require __DIR__ ."/vendor/autoload.php";
 
-  (new \EnvHander\Environment\Environment(__DIR__))->load();
+ $env = new \EnvHandler\Environment\Environment(__DIR__);
 
-  (new \EnvHander\Test\TestClass());
+ $env->load(true);
 
 ?>

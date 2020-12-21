@@ -30,7 +30,7 @@ class ComposerStaticInit2f6643837d9d3cced32346fd3b93f0b8
         ),
         'E' => 
         array (
-            'EnvHander\\' => 10,
+            'EnvHandler\\' => 11,
         ),
         'D' => 
         array (
@@ -61,7 +61,7 @@ class ComposerStaticInit2f6643837d9d3cced32346fd3b93f0b8
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
         ),
-        'EnvHander\\' => 
+        'EnvHandler\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

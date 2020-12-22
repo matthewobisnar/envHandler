@@ -2,7 +2,7 @@
 
 namespace EnvHandler\Environment;
 
-use EnvHandler\Environment\EnvironmentColllectionInterface;
+use EnvHandler\Environment\EnvironmentCollectionTrait;
 
 class Environment 
 {

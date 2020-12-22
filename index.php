@@ -3,6 +3,4 @@
 
  $env = new \EnvHandler\Environment\Environment(__DIR__);
 
- $env->load(true);
-
 ?>

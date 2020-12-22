@@ -112,7 +112,8 @@ trait EnvironmentCollectionTrait
      * @param string
      * @return boolean
      */
-    public function generateText ($content, $fileNameExtension) {
+    public function generateText ($content, $fileNameExtension) 
+    {
 
         try {
 

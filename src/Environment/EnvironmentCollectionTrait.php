@@ -1,8 +1,6 @@
 <?php
 namespace EnvHandler\Environment;
 
-use EnvHandler\Environment\EnvironmentColllectionInterface;
-
 trait EnvironmentCollectionTrait
 {
     /**

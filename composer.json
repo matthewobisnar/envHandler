@@ -1,5 +1,6 @@
 {
     "name":"envhandler/envhandler",
+    "type": "library",
     "description": "Simple and minimal yet powerful env handler",
     "keywords": [
         "Env Handler",

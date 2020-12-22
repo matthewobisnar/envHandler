@@ -1,1 +1,3 @@
-# envHandler
+# Installation
+
+composer require envhandler/envhandler

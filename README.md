@@ -4,7 +4,7 @@ To install with composer:
 composer require envhandler/envhandler
 ```
 
-#Basic Example
+# Basic Example
 
 ```php
 require __DIR__ ."/vendor/autoload.php";

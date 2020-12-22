@@ -2,6 +2,7 @@
     "name":"envhandler/envhandler",
     "type": "library",
     "description": "Simple and minimal yet powerful env handler",
+    "minimum-stability": "dev",
     "keywords": [
         "Env Handler",
         "Env",

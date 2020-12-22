@@ -25,5 +25,8 @@
         "psr-4": {
             "EnvHandler\\": "src/"
         }
+    },
+    "require":{
+        "envhandler/envhandler": "1.0.0"
     }
 }

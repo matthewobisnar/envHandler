@@ -53,7 +53,6 @@ class Environment
     /**
      * Return associative array list if the file exist and not empty.
      * Return an empty array if the file exists and empty.
-     * Throw runtime exception if the file does not exists.
      * 
      * @param void
      * @return array

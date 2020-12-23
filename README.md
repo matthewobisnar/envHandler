@@ -26,6 +26,10 @@ MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=null
 MAIL_FROM_NAME=null
 ```
+You can Create your own key=value pair in .env.
+```.env
+CUSTOM_KEY=VALUE
+```
 # Usage
 
 ```php
@@ -36,7 +40,7 @@ require __DIR__ ."/vendor/autoload.php";
 $env = new \EnvHandler\Environment\Environment(__DIR__);
 ```
 ```php
-// true parameter will automatically creates the .env at the root path of the your project with the value from .env.example
+// true parameter will automatically creates the .env at the root path of your project with the value from .env.example
 
 $env->load(true);
 ```

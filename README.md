@@ -42,6 +42,7 @@ $env->load(true);
 ```
 ```php
 // To manually create an env file, call the load method with an empty parameter.
+// create an .env at the root path of your project with key=value format.
 
 $env->load();
 ```

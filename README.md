@@ -26,13 +26,17 @@ MAIL_ENCRYPTION=null
 MAIL_FROM_ADDRESS=null
 MAIL_FROM_NAME=null
 ```
-# Basic Example
+# Usage
 
 ```php
 require __DIR__ ."/vendor/autoload.php";
 
 $env = new \EnvHandler\Environment\Environment(__DIR__);
 
+```
+```php
 $env->load(true);
-
+```
+```php
+$env->load();
 ```

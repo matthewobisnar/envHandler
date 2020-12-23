@@ -42,12 +42,12 @@ $env->load(true);
 ```
 ```php
 // To manually create an env file, call the load method with an empty parameter.
-// create the .env file at the root path of your project with key=value format.
+// And create the .env file at the root path of your project with key=value format.
 
 $env->load();
 ```
 ```php
-// Output
+// Output an assoiciative array value from .env file.
 var_dump($env->getEnvFileContent());
 ```
 # Sample Output

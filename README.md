@@ -31,12 +31,26 @@ MAIL_FROM_NAME=null
 ```php
 require __DIR__ ."/vendor/autoload.php";
 
+// The class the will automatically creates the env.example during instantiation
 $env = new \EnvHandler\Environment\Environment(__DIR__);
-
 ```
 ```php
+// true parameter will automatically creates the .env at the root path of application with the value from .env.example
 $env->load(true);
 ```
 ```php
+To manually create an env file,
 $env->load();
+```
+```php
+var_dump($env->getEnvFileContent());
+```
+# sample output
+Call the value from .env file anywhere in your project.
+```php
+echo getEnv('APP_URL'); // Output: http://localhost
+echo getEnv('APP_NAME'); // Output: App Name
+echo getEnv('APP_ENV'); // Output: development
+
+echo getEnv('YOUR_CUSTOM_KEY_HERE_FROM_ENV')
 ```

@@ -48,6 +48,7 @@ $env->load();
 ```
 ```php
 // Output an assoiciative array value from .env file.
+
 var_dump($env->getEnvFileContent());
 ```
 # Sample Output

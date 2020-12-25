@@ -56,7 +56,7 @@ $env->load();
 var_dump($env->getEnvFileContent());
 ```
 # Sample Output
-Call the value from .env anywhere in your project.
+Call the value you stored in .env anywhere in your project.
 ```php
 echo getEnv('APP_URL'); // Output: http://localhost
 echo getEnv('APP_NAME'); // Output: App Name

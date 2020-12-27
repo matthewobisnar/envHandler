@@ -51,7 +51,7 @@ $env->load(true);
 $env->load();
 ```
 ```php
-// Output an assoiciative array value from .env file.
+// Output an associative array value from .env file.
 
 var_dump($env->getEnvFileContent());
 ```

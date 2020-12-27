@@ -35,7 +35,7 @@ CUSTOM_KEY=VALUE
 ```php
 require __DIR__ ."/vendor/autoload.php";
 
-// The class the will automatically creates the env.example during instantiation.
+// The class the will automatically creates an env.example file during instantiation.
 
 $env = new \EnvHandler\Environment\Environment(__DIR__);
 ```

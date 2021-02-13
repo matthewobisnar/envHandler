@@ -23,7 +23,7 @@ trait EnvironmentCollectionTrait
      * 
      * @var string
      */
-    public $delimeter = "=:";
+    public $delimeter = "=";
 
     /**
      * Call magic method construct

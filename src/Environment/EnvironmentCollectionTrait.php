@@ -117,9 +117,9 @@ trait EnvironmentCollectionTrait
 
         try {
 
-            $writeContent = fopen($this->filePath($fileNameExtension), "w");
-            fwrite($writeContent, $content);
-            fclose($writeContent);
+            $writeContent = @fopen($this->filePath($fileNameExtension), "w");
+            @fwrite($writeContent, $content);
+            @fclose($writeContent);
 
         } catch(\Exception $e) {
             throw new \RuntimeException(sprintf($e->getMessage()));
